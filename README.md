@@ -15,6 +15,14 @@ India is a land of diverse languages and complex bureaucracy. Voter turnout amon
 
 ---
 
+## 👤 User Journey
+
+1. User signs up and selects preferred language  
+2. Inputs basic details (age, voter ID status, location)  
+3. Receives a personalized voting roadmap  
+4. Tracks progress through each step  
+5. Uses assistant for queries and guidance
+   
 ## 🏗️ Technical Architecture
 
 VoteBuddy follows a **Decoupled Client-Side Architecture** designed for high performance and zero-latency localized rendering.
