@@ -1,0 +1,135 @@
+.onboardingContainer {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 600px;
+  padding: 2.5rem;
+}
+
+.progressHeader {
+  margin-bottom: 2rem;
+}
+
+.progressBar {
+  height: 8px;
+  background-color: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.stepText {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.formContent {
+  min-height: 250px;
+}
+
+.stepContent h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.helperText {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.optionsGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.optionBtn {
+  padding: 1.25rem;
+  border: 2px solid var(--border);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.2s;
+  color: var(--text-dark);
+}
+
+.optionBtn:hover {
+  border-color: var(--primary);
+  background-color: rgba(26, 86, 219, 0.02);
+}
+
+.optionBtn.selected {
+  border-color: var(--primary);
+  background-color: rgba(26, 86, 219, 0.05);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.selectInput {
+  padding: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.selectInput:focus {
+  border-color: var(--primary);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.iconLeft {
+  margin-right: 0.5rem;
+}
+
+.iconRight {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .optionsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
